@@ -25,37 +25,37 @@ A beginner Playwright framework built with **Playwright** and **JavaScript**, co
 Playwright/
 ├── .github/
 │   └── workflows/
-│       └── playwright.yml       # CI/CD pipeline
+│       └── playwright.yml          # CI/CD pipeline
 ├── data/
-│   ├── testdata_login.js        # JS test data object
-│   ├── testdata_login.json      # JSON test data for data driven tests
-│   └── api_data.js              # API test data
+│   ├── testdata_login.js           # JS test data object
+│   ├── testdata_login.json         # JSON test data for data driven tests
+│   └── api_data.js                 # API test data
 ├── fixtures/
-│   ├── apiContext.js            # API request context fixture
-│   ├── api_fixture_ui.js        # Combined API + UI fixture
-│   └── loginFixture.js          # Login page fixture
+│   ├── apiContext.js               # API request context fixture
+│   ├── api_fixture_ui.js           # Combined API + UI fixture
+│   └── loginFixture.js             # Login page fixture
 ├── pages/
-│   ├── LoginPage.js             # Login page object
-│   ├── TodoPage.js              # Todo page object
-│   └── Todopage_2.js            # Extended todo page object
+│   ├── LoginPage.js                # Login page object
+│   ├── TodoPage.js                 # Todo page object
+│   └── Todopage_2.js               # Extended todo page object
 ├── tests/
-│   ├── example.spec.js          # Playwright default example tests
-│   ├── wikipedia.spec.js        # Wikipedia search tests
-│   ├── Exercises.spec.js        # Todo app exercises
-│   ├── todo.spec.js             # Todo app POM tests
-│   ├── todo_2.spec.js           # Todo app advanced tests
-│   ├── login.spec.js            # Login POM tests
-│   ├── data_driven_login.spec.js# Data driven login tests
-│   ├── login_with_fixture.spec.js# Login with fixture tests
-│   ├── checkbox.spec.js         # Checkbox tests
-│   ├── request_api.spec.js      # API tests using request fixture
-│   ├── api_with_fixture.spec.js # API tests using APIRequestContext
+│   ├── example.spec.js             # Playwright default example tests
+│   ├── wikipedia.spec.js           # Wikipedia search tests
+│   ├── Exercises.spec.js           # Todo app exercises
+│   ├── todo.spec.js                # Todo app POM tests
+│   ├── todo_2.spec.js              # Todo app advanced tests
+│   ├── login.spec.js               # Login POM tests
+│   ├── data_driven_login.spec.js   # Data driven login tests
+│   ├── login_with_fixture.spec.js  # Login with fixture tests
+│   ├── checkbox.spec.js            # Checkbox tests
+│   ├── request_api.spec.js         # API tests using request fixture
+│   ├── api_with_fixture.spec.js    # API tests using APIRequestContext
 │   ├── api_with_ui_and_api.spec.js # Combined UI + API tests
-│   └── adv_locators.spec.js     # Advanced locator scenarios
-├── .env                         # Environment variables (not committed)
-├── .gitignore                   # Git ignore rules
-├── package.json                 # Project dependencies
-└── playwright.config.js         # Playwright configuration
+│   └── adv_locators.spec.js        # Advanced locator scenarios
+├── .env                            # Environment variables (not committed)
+├── .gitignore                      # Git ignore rules
+├── package.json                    # Project dependencies
+└── playwright.config.js            # Playwright configuration
 ```
 
 ---
