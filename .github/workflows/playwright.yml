@@ -30,7 +30,7 @@ jobs:
           BASE_URL: ${{ secrets.BASE_URL }}
 
       - name: Upload HTML report
-        uses: aactions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
