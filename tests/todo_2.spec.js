@@ -4,6 +4,7 @@ import { Todopage_2 } from "../pages/Todopage_2"
 
 test.describe( 'TODO',() => {
     let login
+    let data = ['Buy groceries','Call mom']
     test.beforeEach( async ({page}) =>{
         login = new Todopage_2(page);
         await login.goto()
@@ -19,8 +20,9 @@ test.describe( 'TODO',() => {
         await expect(page.getByText('Call mom')).toBeVisible(); 
     })
     test('Third_Script', async ({page}) => {
-        for(const d of task ){
-            await login.add(d.task)
+        
+        for(const d of data ){
+            await login.add(d)
         }
         await login.clickActive()
         await expect(page.getByText('2 items left')).toBeVisible();

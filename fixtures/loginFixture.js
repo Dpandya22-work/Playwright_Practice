@@ -7,6 +7,6 @@ export const test = base.extend({
         })
         await page.getByRole('link',{name:'Form Authentication'}).click()
         await use(page)
-        console.log('Done')   
+        // console.log('Done')   
     }
 })

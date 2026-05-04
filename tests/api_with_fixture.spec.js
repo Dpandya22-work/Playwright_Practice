@@ -8,15 +8,15 @@ test.describe('API PRAC USING FIXTURES', () =>{
         expect(response.status()).toBe(200);
         const body = await response.json()
         //console.log(body)
-        console.log('Get:done')
+        // console.log('Get:done')
     })
     test('POST REQUEST', async ({apiContext}) =>{
         const response = await apiContext.post('/api/products',{ data })
         expect (response.status()).toBe(201)
         const body = await response.json()
         expect(body.email).toBe(data.email)
-        console.log(body)
-        console.log('Post:done')
+        // console.log(body)
+        // console.log('Post:done')
     })
     test('PUT REQUEST',async ({apiContext}) =>{
         const response = await apiContext.put('/api/products/1',{data: { name: 'Deep Pandya', year: 2026 }} )
