@@ -4,6 +4,4 @@ export const test = base.extend({
     todoFx: async ({page},use) =>{
         await page.goto('https://demo.playwright.dev/todomvc')
         await use(page)
-        // console.log('Done from fixture : todoFixture')
-    }
 })
