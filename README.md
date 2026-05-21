@@ -179,4 +179,4 @@ For CI/CD — secrets are configured in GitHub repository settings under `Settin
 
 **Deep Pandya**  
 QA Engineer  
-[GitHub](https://github.com/Dpandya22-ubs)
+[GitHub](https://github.com/Dpandya22-work)
