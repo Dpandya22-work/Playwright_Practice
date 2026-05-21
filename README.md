@@ -84,8 +84,8 @@ Playwright/
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/Dpandya22-ubs/Playwrite_Practice.git
-cd Playwrite_Practice
+git clone https://github.com/Dpandya22-ubs/Playwright_Practice.git
+cd Playwright_Practice
 ```
 
 **2. Install dependencies:**
