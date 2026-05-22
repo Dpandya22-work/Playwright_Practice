@@ -37,12 +37,11 @@ Playwright/
 ├── pages/
 │   ├── LoginPage.js                # Login page object
 │   ├── TodoPage.js                 # Todo page object
-│   └── Todopage_2.js               # Extended todo page object
+│   └── Checkbox.js                 # Checkbox object
 ├── tests/
 │   ├── example.spec.js             # Playwright default example tests
 │   ├── wikipedia.spec.js           # Wikipedia search tests
-│   ├── todo.spec.js                # Todo app POM tests
-│   ├── todo_2.spec.js              # Todo app advanced tests
+│   ├── todo.spec.js                # Todo app advanced tests
 │   ├── login.spec.js               # Login POM tests
 │   ├── data_driven_login.spec.js   # Data driven login tests
 │   ├── login_with_fixture.spec.js  # Login with fixture tests
