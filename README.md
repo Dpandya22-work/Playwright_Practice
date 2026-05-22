@@ -33,6 +33,7 @@ Playwright/
 ├── fixtures/
 │   ├── apiContext.js               # API request context fixture
 │   ├── api_fixture_ui.js           # Combined API + UI fixture
+│   ├── todoFixture.js              # todoFixture fixture
 │   └── loginFixture.js             # Login page fixture
 ├── pages/
 │   ├── LoginPage.js                # Login page object
