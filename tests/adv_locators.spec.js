@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test'
-import {Todopage_2} from '../pages/Todopage_2'
+import {Todopage} from '../pages/Todopage'
 
 test.describe('ADVANCE LOCATORS',()=>{
     test('Script_1',async({page}) =>{
@@ -25,7 +25,7 @@ test.describe('ADVANCE LOCATORS',()=>{
         await expect(page.getByRole('heading', { name: 'name: user1' })).toBeVisible();
     })
     test('Script_4',async ({page}) =>{
-        const todo = new Todopage_2(page)
+        const todo = new Todopage(page)
         await todo.goto()
         let data = ['Buy groceries', 'Call mom', 'Pay bills']
         let n = 0
