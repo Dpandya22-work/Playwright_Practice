@@ -1,4 +1,4 @@
-import {page,expect} from '@playwright/test'
+import {expect} from '@playwright/test'
 import {test} from '../fixtures/api_fixture_ui'
 
 test.describe('API AND UI',() =>{

@@ -1,25 +1,32 @@
-import {test, expect } from '@playwright/test';
-import { TodoPage } from '../pages/TodoPage';
-test.describe('Todo App', () => {
-    let todoPage
+import {test,expect} from "@playwright/test"
+import { Todopage } from "../pages/Todopage"
+
+
+test.describe( 'TODO',() => {
+    let login
     let data = ['Buy groceries','Call mom']
-    test.beforeEach(async ({ page }) => {
-        todoPage = new TodoPage(page);
-        await todoPage.goto();
-    });
-
-    test('Add and complete a todo', async ({ page }) => {
-        let task = 'Buy groceries'
-        await todoPage.addTodo(task);
-        await todoPage.completeTodo(task)
-        await todoPage.clickCompleted();
-        await expect(page.getByText(task)).toBeVisible();
-    });
-
-    test('Add multiple todos', async ({ page }) => {
-        for(let d of data){
-            await todoPage.addTodo(d);
+    test.beforeEach( async ({page}) =>{
+        login = new Todopage(page);
+        await login.goto()
+    })
+    test('First_script' ,async({page}) =>{
+        await login.add('Buy groceries')
+        await login.del();
+        await expect(page.getByTestId('todo-title')).not.toBeVisible(); 
+    })
+    test('Second_Script', async ({page}) => {
+        await login.add('Call mom')
+        await login.done();
+        await expect(page.getByText('Call mom')).toBeVisible(); 
+    })
+    test('Third_Script', async ({page}) => {
+        
+        for(const d of data ){
+            await login.add(d)
         }
+        await login.clickActive()
         await expect(page.getByText('2 items left')).toBeVisible();
-    });
-});
+      
+    })
+})
+

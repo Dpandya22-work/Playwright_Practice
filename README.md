@@ -41,7 +41,6 @@ Playwright/
 ├── tests/
 │   ├── example.spec.js             # Playwright default example tests
 │   ├── wikipedia.spec.js           # Wikipedia search tests
-│   ├── Exercises.spec.js           # Todo app exercises
 │   ├── todo.spec.js                # Todo app POM tests
 │   ├── todo_2.spec.js              # Todo app advanced tests
 │   ├── login.spec.js               # Login POM tests

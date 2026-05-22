@@ -10,7 +10,7 @@ export class Checkbox{
     async isChecked(n){
         await this.chk_1.nth(n).check();
     }
-    async untik(n){
+    async uncheck(n){
        await this.chk_1.nth(n).uncheck();
     }
 

@@ -17,13 +17,13 @@ test.describe('Basics of api testing(REQUEST)',() => {
         expect(body.email).toBe(data.email)
     })
     test('PUT REQUEST', async ({request}) =>{
-        const response = await request.put(`${endpoint}/1 ` ,{ headers,  data: { name: 'Deep Pandya', year: 2026 } })
+        const response = await request.put(`${endpoint}/1` ,{ headers,  data: { name: 'Deep Pandya', year: 2026 } })
         const body = await response.json()
         expect(response.status()).toBe(200)
         expect(body.name).toBe('Deep Pandya')
     })
     test('PATCH REQUEST', async ({request}) =>{
-        const response = await request.patch(`${endpoint}/1 ` ,{headers,data:{name:'partially updated'}})
+        const response = await request.patch(`${endpoint}/1` ,{headers,data:{name:'partially updated'}})
         const body = await response.json()
         expect(response.status()).toBe(200)
         expect(body.name).toBe('partially updated')

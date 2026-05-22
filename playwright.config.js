@@ -29,7 +29,6 @@ export default defineConfig({
     ['html'],
     ['list']
 ],
-  // timeout: 30000, // add here
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -39,7 +38,7 @@ export default defineConfig({
     screenshot: 'only-on-failure', // add
     video: 'retain-on-failure',    // add
     headless: true,  
-    trace: 'on',
+    trace: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
