@@ -1,12 +1,12 @@
 import {test,expect} from "@playwright/test"
-import { Todopage } from "../pages/Todopage"
+import { TodoPage } from "../pages/TodoPage.js"
 
 
 test.describe( 'TODO',() => {
     let login
     let data = ['Buy groceries','Call mom']
     test.beforeEach( async ({page}) =>{
-        login = new Todopage(page);
+        login = new TodoPage(page);
         await login.goto()
     })
     test('First_script' ,async({page}) =>{
@@ -26,7 +26,6 @@ test.describe( 'TODO',() => {
         }
         await login.clickActive()
         await expect(page.getByText('2 items left')).toBeVisible();
-      
     })
 })
 

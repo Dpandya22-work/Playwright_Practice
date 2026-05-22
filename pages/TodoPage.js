@@ -1,4 +1,4 @@
-export class Todopage{
+export class TodoPage{
     constructor(page){
         this.page = page
         this.work = page.getByRole('textbox', { name: 'What needs to be done?' })  
@@ -20,7 +20,6 @@ export class Todopage{
     }
     async done(){
         await this.complete.click()
-        //await this.completed.click();
     }
     async clickActive(){
         await this.activebtn.click();
